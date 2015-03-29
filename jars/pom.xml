@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>firmata4j</groupId>
-    <artifactId>firmata4j</artifactId>
+    <groupId>guino</groupId>
+    <artifactId>guino</artifactId>
     <version>0.0.0</version>
 
     <packaging>jar</packaging>
 
-    <name>firmata4j</name>
+    <name>guino</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,7 +59,7 @@
                     -->
                     <appendAssemblyId>false</appendAssemblyId>
                     <outputDirectory>./</outputDirectory>
-                    <finalName>firmata4j.${project.version}</finalName>
+                    <finalName>guino.${project.version}</finalName>
                 </configuration>
             </plugin>
 
@@ -74,6 +74,12 @@
             <groupId>com.github.kurbatov</groupId>
             <artifactId>firmata4j</artifactId>
             <version>2.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.californium</groupId>
+            <artifactId>californium-core</artifactId>
+            <version>1.0.0-M2</version>
         </dependency>
 
         <!--
